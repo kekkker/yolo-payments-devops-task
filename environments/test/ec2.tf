@@ -7,7 +7,7 @@ module "ec2" {
   ec2_launch_template_name = "develop"
   ec2_security_group_ids   = [module.sg.sg_id]
 
-  user_data = {
+  ec2_user_data = {
     template_name = "userdata.tmpl"
     variables     = {}
   }

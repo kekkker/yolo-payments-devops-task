@@ -34,7 +34,7 @@ Manages EC2 instances with a custom launch template.
 | `ec2_subnet_id` | The subnet ID where the instance will be launched. |
 | `ec2_launch_template_name` | The name of the launch template to create. |
 | `ec2_security_group_ids` | A list of security group IDs to associate with the EC2 instances. |
-| `user_data` | User data for configuring instances, including a template name and variables. |
+| `ec2_user_data` | User data for configuring instances, including a template name and variables. |
 
 #### Outputs
 

@@ -14,7 +14,7 @@ variable "ec2_subnet_id" {
   type        = string
 }
 
-variable "user_data" {
+variable "ec2_user_data" {
   description = "User data for configuring instances, including a template name and variables."
   type = object({
     template_name = string

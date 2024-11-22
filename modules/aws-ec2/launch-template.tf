@@ -13,7 +13,7 @@ resource "aws_launch_template" "this" {
     http_put_response_hop_limit = var.http_hop_limit
   }
 
-  user_data              = base64encode(templatefile(var.user_data.template_name, var.user_data.variables))
+  user_data              = base64encode(templatefile(var.ec2_user_data.template_name, var.ec2_user_data.variables))
   vpc_security_group_ids = var.ec2_security_group_ids
 
   tags = var.tags
