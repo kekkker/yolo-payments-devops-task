@@ -7,8 +7,6 @@ resource "aws_instance" "this" {
     version = aws_launch_template.this.latest_version
   }
 
-  key_name = "test"
-
   metadata_options {
     http_endpoint = var.http_endpoint
     http_tokens   = var.http_tokens
