@@ -43,7 +43,7 @@ Manages EC2 instances with a custom launch template.
 ### 2. `aws-sg`
 
 #### Description
-Creates Security Groups (SG) with ingress and egress rules.
+Creates SG with ingress and egress rules.
 
 #### Variables
 
@@ -88,8 +88,8 @@ Creates a Virtual Private Cloud (VPC) with public and private subnets.
 cd ./environments/test
 ```
 2. **Authenticate with AWS** (one of the following methods):
-        * **AWS CLI**: Run `aws configure` and follow the prompts.
-        * **Manual**: Set environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+* **AWS CLI**: Run `aws configure` and follow the prompts.
+* **Manual**: Set environment variables `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
 3. **Initialize Terraform**:
 ```bash
 terraform init
@@ -116,6 +116,7 @@ To apply this infrastructure, your AWS IAM role needs the following permissions:
 + `ec2:AssociateSubnet`
 + `ec2:CreateRouteTable`
 + `ec2:CreateInternetGateway`
+
 * **Security Groups**:
 + `ec2:DescribeSecurityGroups`
 + `ec2:AuthorizeSecurityGroupIngress`
