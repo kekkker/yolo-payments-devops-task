@@ -8,7 +8,7 @@ module "ec2" {
   ec2_security_group_ids   = [module.sg.sg_id]
 
   user_data = {
-    template_name = "ec2.tmpl"
+    template_name = "userdata.tmpl"
     variables     = {}
   }
 }
