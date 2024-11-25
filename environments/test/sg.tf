@@ -18,4 +18,6 @@ module "sg" {
     cidr_blocks = ["0.0.0.0/0"]
     description = "Allowing 80 from everywhere"
   }]
+
+  tags = var.tags
 }

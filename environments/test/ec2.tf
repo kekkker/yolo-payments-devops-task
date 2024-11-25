@@ -11,4 +11,6 @@ module "ec2" {
     template_name = "userdata.tmpl"
     variables     = {}
   }
+
+  tags = var.tags
 }
